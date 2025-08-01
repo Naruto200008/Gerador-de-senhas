@@ -8,19 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body> <!--body serve-->
-    <section class="conteudo">
-        <div class="conteudo-titulo">
-            <img src="unlock.svg" alt="cadeado fechado">
-            <h2 class="titulo-principal">Gerador de senhas</h2>
-            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
+<body> <!--body serve para definir o corpo principal do documento. É um elemento fundamental e obrigátorio porque é nele que será mostrado todo o
+     conteúdo do site-->
+    <section class="conteudo"> <!--section é usado para agrupar conteúdo relacionado em seções temáticas, aqui eu uso para agrupar todo o conteúdo
+         em um único ponto -->
+        <div class="conteudo-titulo"> <!--O div é usado para agrupar outros elementos HTML e criar seções lógicas em um documento, aqui eu uso para
+             criar varias seções e combinar várias seções-->
+            <img src="unlock.svg" alt="cadeado fechado"> <!--img é utilizada para inserir imagens em uma página web, aqui eu uso para colocar uma
+             imagem no site-->
+            <h2 class="titulo-principal">Gerador de senhas</h2> <!--h2  é usada para definir um subtítulo-->
+            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3><!--h3 é utilizada para criar um subtítulo de nível inferior
+             dentro de uma página web-->
         </div>
-        <div class="conteudo-senha">
-            <label for="senha">Senha</label>
-            <input name="senha" type="text" id="campo-senha" readonly>
+        <div class="conteudo-senha"> <!--class é usado para agrupar elementos HTML com características semelhantes e aplicar estilos, funcionalidades ou
+             manipulação de forma consistente, eu utilizo várias vezes o class para agrupar elementos de forma consistente-->
+            <label for="senha">Senha</label><!--label é para associar um texto de legenda a um controle de formulário (como um campo de entrada), melhorando
+             a acessibilidade e usabilidade da página-->
+            <input name="senha" type="text" id="campo-senha" readonly><!--input é usada para criar campos de entrada interativos em formulários, permitindo
+             que os usuários forneçam dados ao site, aqui é usada para idicar um exemplo de senha com base no nível de "força" da senha-->
         </div>
         <div class="parametro">
-            <h3 class="parametro-titulo">Personalize sua senha</h3>
+            <h3 class="parametro-titulo">Personalize sua senha</h3> <!--h3 é usado para criar campos de entrada interativos em formulários, permitindo
+             que os usuários forneçam dados ao site-->
             <div class="parametro-coluna__senha">
                 <div class="parametro-senha">
                     <h4 class="parametro-senha__titulo">Número de caracteres</h4>
