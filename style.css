@@ -1,158 +1,184 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
+/* Definindo as variáveis globais de cores e fontes */
 :root {
-    --branco: white;
-    --cor-de-fundo: #00162E;
-    --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075FF;
-    --roboto: 'Roboto', sans-serif;
-    --roboto-mono: 'Roboto Mono', monospace;
+    --branco: white;             /* Cor branca */
+    --cor-de-fundo: #00162E;     /* Cor de fundo escura */
+    --fundo-senha: #00244D;      /* Cor de fundo das seções relacionadas à senha */
+    --fundo-texto: #001E40;      /* Cor de fundo para os campos de texto */
+    --borda: #0075FF;            /* Cor para as bordas */
+    --roboto: 'Roboto', sans-serif; /* Fonte principal */
+    --roboto-mono: 'Roboto Mono', monospace; /* Fonte monoespaçada para áreas de código */
 }
 
+/* Definindo um peso de fonte padrão para o corpo do texto */
 * {
-    font-weight: 400;
+    font-weight: 400;             /* Peso de fonte padrão */
 }
 
+/* Estilo global para o body da página */
 body {
-    color: var(--branco);
-    background-color: var(--cor-de-fundo);
-    font-family: var(--roboto);
+    color: var(--branco);         /* Cor do texto é branco */
+    background-color: var(--cor-de-fundo); /* Cor de fundo escura */
+    font-family: var(--roboto);   /* Usando a fonte 'Roboto' */
 }
 
+/* Estilo para o título principal */
 .titulo-principal {
-    font-family: var(--roboto-mono);
-    font-size: 32px;
+    font-family: var(--roboto-mono);  /* Usando a fonte 'Roboto Mono' para o título */
+    font-size: 32px;                 /* Tamanho da fonte para o título */
 }
 
+/* Estilo para o título secundário */
 .titulo-secundario {
-    font-size: 24px;
+    font-size: 24px;                 /* Tamanho da fonte para o título secundário */
 }
 
+/* Alinhamento do título principal no centro da página */
 .conteudo-titulo {
-    text-align: center;
-    margin-top: 80px;
+    text-align: center;             /* Centraliza o título */
+    margin-top: 80px;               /* Espaço acima do título */
 }
 
+/* Estilo para a seção de conteúdo da senha */
 .conteudo-senha {
-    margin-top: 80px;
-    background: var(--fundo-senha);
-    padding: 24px;
-    border-bottom: 6px solid var(--borda);
+    margin-top: 80px;               /* Espaço acima da seção */
+    background: var(--fundo-senha); /* Cor de fundo da seção de senha */
+    padding: 24px;                  /* Preenchimento interno */
+    border-bottom: 6px solid var(--borda); /* Borda inferior azul */
 }
 
+/* Estilo para o campo de exibição da senha */
 #campo-senha {
-    background-color: var(--fundo-senha);
-    border: none;
-    color: var(--branco);
-    font-family: var(--roboto-mono);
-    font-size: 40px;
-    width: 70%;
+    background-color: var(--fundo-senha); /* Cor de fundo do campo */
+    border: none;                        /* Remove a borda padrão */
+    color: var(--branco);                 /* Texto branco */
+    font-family: var(--roboto-mono);      /* Usando a fonte monoespaçada */
+    font-size: 40px;                      /* Tamanho grande da fonte para a senha */
+    width: 70%;                           /* Largura do campo de senha */
 }
 
+/* Estilo para o campo de senha quando está focado (clicado) */
 #campo-senha:focus {
-    outline: none;
+    outline: none;                      /* Remove o contorno padrão ao focar */
 }
 
+/* Estilo para o contêiner geral de conteúdo */
 .conteudo {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px;                  /* Largura máxima do conteúdo */
+    margin: 0 auto;                     /* Centraliza o conteúdo horizontalmente */
 }
 
+/* Estilo para as seções de parâmetros (checkboxes, botões) */
 .parametro {
-    background-color: var(--fundo-texto);
-    border: 2px solid var(--borda);
-    margin-top: 32px;
-    padding: 24px;
+    background-color: var(--fundo-texto); /* Cor de fundo para cada parâmetro */
+    border: 2px solid var(--borda);       /* Borda azul */
+    margin-top: 32px;                     /* Espaço acima da seção */
+    padding: 24px;                        /* Preenchimento interno */
 }
 
+/* Estilo para o título de cada seção de parâmetro */
 .parametro-titulo {
-    font-family: var(--roboto-mono);
-    font-size: 28px;
+    font-family: var(--roboto-mono);      /* Usando a fonte monoespaçada */
+    font-size: 28px;                      /* Tamanho do título */
 }
 
+/* Estilo específico para os títulos dentro da seção de senha */
 .parametro-senha__titulo {
-    font-size: 24px;
+    font-size: 24px;                      /* Tamanho do título dentro da seção de senha */
 }
 
+/* Estilo para a coluna que organiza os elementos de senha */
 .parametro-coluna__senha {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex;                        /* Usando Flexbox */
+    flex-direction: column;               /* Organiza os itens verticalmente */
+    justify-content: center;              /* Alinha os itens no centro */
 }
 
+/* Estilo para cada bloco de senha dentro da coluna */
 .parametro-senha {
-    width: 50%;
-    margin: 0 auto;
+    width: 50%;                           /* Largura de 50% para cada bloco */
+    margin: 0 auto;                       /* Centraliza os blocos horizontalmente */
 }
 
+/* Estilo para os botões de controle da senha (diminuir e aumentar) */
 .parametro-senha-botoes {
-    display: flex;
-    justify-content: center;
+    display: flex;                        /* Usando Flexbox */
+    justify-content: center;              /* Centraliza os botões */
 }
 
+/* Estilo dos botões de controle da senha */
 .parametro-senha__botao {
-    background-color: var(--fundo-texto);
-    color: var(--branco);
-    border: 2px solid var(--borda);
-    padding: 24px;
-    font-size: 24px;
-    cursor: pointer;
+    background-color: var(--fundo-texto); /* Cor de fundo dos botões */
+    color: var(--branco);                 /* Texto branco */
+    border: 2px solid var(--borda);       /* Borda azul */
+    padding: 24px;                        /* Preenchimento interno */
+    font-size: 24px;                      /* Tamanho da fonte */
+    cursor: pointer;                     /* Cursor de clique */
 }
 
+/* Estilo para o texto exibido com o número de caracteres da senha */
 .parametro-senha__texto {
-    padding: 24px;
-    border-top: 2px solid var(--borda);
-    border-bottom: 2px solid var(--borda);
-    margin: 0;
-    font-size: 24px;
+    padding: 24px;                        /* Preenchimento interno */
+    border-top: 2px solid var(--borda);   /* Borda superior azul */
+    border-bottom: 2px solid var(--borda);/* Borda inferior azul */
+    margin: 0;                            /* Remove margens */
+    font-size: 24px;                      /* Tamanho da fonte */
 }
 
+/* Estilo para os rótulos (labels) dos checkboxes */
 label {
-    font-size: 20px;
+    font-size: 20px;                      /* Tamanho da fonte */
 }
 
+/* Estilo para os checkboxes */
 .checkbox {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+    width: 20px;                          /* Largura do checkbox */
+    height: 20px;                         /* Altura do checkbox */
+    cursor: pointer;                     /* Cursor de clique */
 }
 
+/* Estilo para a barra de força da senha */
 .barra {
-    background-color: var(--fundo-senha);
-    height: 30px;
-    width: 100%;
+    background-color: var(--fundo-senha); /* Cor de fundo da barra */
+    height: 30px;                         /* Altura da barra */
+    width: 100%;                          /* Largura total */
 }
 
+/* Estilo para a barra que indica a força da senha */
 .forca {
-    height: 30px;
-    position: relative;
-    bottom: 30px;
+    height: 30px;                         /* Altura da barra de força */
+    position: relative;                   /* Necessário para o posicionamento */
+    bottom: 30px;                         /* Desloca a barra para baixo */
 }
 
+/* Estilo para a classe 'fraca' (senha fraca) */
 .fraca {
-    width: 25%;
-    background-color: #E71B32;
+    width: 25%;                           /* Largura de 25% para a força fraca */
+    background-color: #E71B32;            /* Cor vermelha */
 }
 
+/* Estilo para a classe 'media' (senha média) */
 .media {
-    background-color: #FAF408;
-    width: 50%;
+    width: 50%;                           /* Largura de 50% para a força média */
+    background-color: #FAF408;            /* Cor amarela */
 }
 
+/* Estilo para a classe 'forte' (senha forte) */
 .forte {
-    background-color: #00FF85;
-    width: 100%;
+    width: 100%;                          /* Largura total para a força forte */
+    background-color: #00FF85;            /* Cor verde */
 }
 
+/* Estilo para os textos que indicam a força da senha (fraca, média, forte) */
 .parametro-senha-textos {
-    display: flex;
-    justify-content: space-between;
+    display: flex;                        /* Usando Flexbox */
+    justify-content: space-between;       /* Espaço uniforme entre os textos */
 }
 
-
+/* Media Query para telas maiores (768px ou mais) */
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha {
-        flex-direction: row;
+        flex-direction: row;              /* Organiza os elementos em linha para telas maiores */
     }
 }
